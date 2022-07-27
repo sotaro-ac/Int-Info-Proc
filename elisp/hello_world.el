@@ -1,5 +1,5 @@
 ;;
-;; "Hello Lisp!" by github.com@sotaro-ac
+;; "Hello Lisp!" by sotaro-ac@github.com
 ;;
 
 " [Tips]:

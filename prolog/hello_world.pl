@@ -1,5 +1,5 @@
 /*
- * "Hello Prolog!" by github.com@sotaro-ac
+ * "Hello Prolog!" by sotaro-ac@github.com
  */
 
 /* Compile with following predicate:
