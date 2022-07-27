@@ -47,7 +47,7 @@ LISPやPrologを使って基本的な知識情報処理(主にグラフ探索)�
 
 ### Emacs Lisp
 
-- **Hello Lisp**：[`elisp/hello_world.el`](elisp/hello_world.el)
+- **Hello Lisp!**：[`elisp/hello_world.el`](elisp/hello_world.el)
   - 最初の儀式．`"Hello World!"` を出力します．
 
 - Coming Soon...
