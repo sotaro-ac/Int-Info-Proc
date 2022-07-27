@@ -59,8 +59,6 @@ LISPやPrologを使って基本的な知識情報処理(主にグラフ探索)�
 
 - Coming Soon...
 
-<!-- 
 ## ライセンス表記 (Lisence)
 
-This product is NOT under lisence in this version.
--->
+The source codes in this repository are provided under the MIT License, see [LICENSE](LICENSE).
