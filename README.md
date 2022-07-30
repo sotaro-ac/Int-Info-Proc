@@ -8,7 +8,7 @@ LISPやPrologを使って基本的な知識情報処理(主にグラフ探索)�
 ### LISPの実行環境：
 - LISPの数ある方言の中でも「**Emacs Lisp** (ELisp)」を使います．
 - GNU Emacs（テキストエディタ）を用意してください．
-> ELispは主流なLISP方言群であるSchemeやCommom Lispとは大きく異なる部分があるようですが，ここでは**純LISP**で使用される最も基本的な関数(`car`, `cdr`, `cons`, `eq`, `atom`)や特殊形式(`cond`, `quote`, etc.)，シンボル（`t`, `nil`）のみを利用してプログラムを記述しています．
+> ELispは主流なLISP方言群であるSchemeやCommom Lispとは大きく異なる部分があるようですが，ここでは多くのLISPで使用される最も基本的な関数(`car`, `cdr`, `cons`, `eq`, `atom`)や特殊形式(`cond`, `quote`, etc.)，シンボル（`t`, `nil`）をベースにプログラムを記述しています．
 
 ### Prologの実行環境：
 - Prologの数ある処理系の中でも「**SWI-Prolog**」を使います．
