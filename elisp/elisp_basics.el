@@ -10,6 +10,7 @@
 123                                     ; integer
 3.141592                                ; float
 nil                                     ; symbol
+'hello                                  ; symbol
 "This is string"                        ; string
 
 ;; Listの作り方
@@ -23,13 +24,19 @@ nil                                     ; symbol
 '(1 (0.2 0.3) () (("foo") t))           ; 複合＋ネストしたリスト
 '()                                     ; 空のリスト
 
+;; Lispの真偽値
+;; Lispにはboolean型は存在しないが, t/nilがこれに相当する
+t                                       ; true  に相当
+nil                                     ; false に相当
+
 
 ;;; Lispの評価
 ;; Lispプログラムでは評価可能なオブジェクトをS式と呼ぶ
 ;; 単に(...)を書くと内部まで評価されてしまう
+;; (function arg1 arg2 ...) のように解釈される
 ;; 先頭に'を付けることで評価を抑止できる
 
-;; (1 2 3 4) => "1" というシンボルはないというエラー
+;; (1 2 3 4) => "1" という関数は存在しないというエラー
 
 "Hello world!"                          ; "Hello world!"を評価(表示される
 ;; => "Hello world!"
@@ -234,7 +241,7 @@ Emacs Lispには複数行コメントが存在しないが,
    (/ (- (* end (+ end 1))
          (* start (- start 1))) 2))
  ;; startからendまでの整数和
- 11 100)                                ; => 4995
+ 50 100)                                ; => 3825
 
 
 ;; For more details: GNU Emacs Lisp Documentation
