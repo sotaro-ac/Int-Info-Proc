@@ -213,6 +213,11 @@ fill-column                             ; シンボル"fill-column"を評価
   ;; => "x + y = 300, and x is smaller than y."
   )
 
+;; 別のファイルを読み込む
+;; "hello_world.el"からhello-world関数をインポート
+(load-file "hello_world.el")            ; => t
+(hello-world)                           ; => "Hello World!"
+
 
 ;;; emacsのコメント
 
