@@ -252,7 +252,8 @@ Emacs Lispにはブロックコメント(複数行にまたがるコメント)�
 
 
 ;; For more details: GNU Emacs Lisp Documentation
-;; https://www.gnu.org/software/emacs/manual/html_node/elisp/index.html
+;; [Official] https://www.gnu.org/software/emacs/manual/html_node/elisp/index.html
+;; [Japanese] https://ayatakesi.github.io/lispref/28.1/elisp-ja.html
 
 (emacs-version)
 ;; => "GNU Emacs 27.1 (build 1, x86_64-pc-linux-gnu, GTK+ Version 3.24.20, cairo version 1.16.0)
