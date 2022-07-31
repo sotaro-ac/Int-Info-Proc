@@ -222,8 +222,10 @@ fill-column                             ; シンボル"fill-column"を評価
 ;;; emacsのコメント
 
 "
-Emacs Lispには複数行コメントが存在しないが,
-文字列を代わりに使うことがある
+Emacs Lispにはブロックコメント(複数行にまたがるコメント)が
+存在しないが，文字列を代わりに使うことがある．
+ちなみにCommon Lispでは #| ... |# の範囲を
+ブロックコメントとして扱うことができる．
 "
 
 ;;;; High-Level Hedding comment
