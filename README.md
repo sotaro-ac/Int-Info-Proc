@@ -77,7 +77,7 @@ LISPやPrologを使って基本的な知識情報処理(主にグラフ探索)�
     - データ型, 演算子(比較, 算術計算)
     - 再帰によるループ実装
     - リストの使い方
-    - カット("!")について
+    - カット(`!`)について
     - Prologのより詳しい入門：[Prolog - Quick Guide](https://www.tutorialspoint.com/prolog/prolog_quick_guide.htm)
 
 ## ライセンス表記 (Lisence)
