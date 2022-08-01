@@ -74,7 +74,10 @@ LISPやPrologを使って基本的な知識情報処理(主にグラフ探索)�
   - Prologの基本的なプログラムを書いてみよう．
     - 確定節：プログラムによる事実(Fact)の宣言, 規則(Rule)の定義
     - ゴール節：質問(Question/Query)による事実/規則の証明
-    - データ型, 演算子(比較, 算術)
+    - データ型, 演算子(比較, 算術計算)
+    - 再帰によるループ実装
+    - リストの使い方
+    - カット("!")について
     - Prologのより詳しい入門：[Prolog - Quick Guide](https://www.tutorialspoint.com/prolog/prolog_quick_guide.htm)
 
 ## ライセンス表記 (Lisence)
