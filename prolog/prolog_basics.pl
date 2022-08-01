@@ -137,3 +137,51 @@ calc :-
 % 10 ** 2 is 100
 % 25 mod 7 is 4
 % true.
+
+
+/* Prolog Loop */
+
+% Prologのループ実装は再帰関数の要領で実現できる
+% - 無限ループに注意して実装しましょう
+
+% N個のAを出力して改行する述語
+put_n_of_A(0) :- nl, !.
+% - "nl" は改行を出力するために使われる
+% - "!" はカットと呼ばれる(後述)
+put_n_of_A(N) :-
+    % 偽が出るまで上から順に評価される
+    N > 0,
+    M is N - 1,
+    write('A'),
+    put_n_of_A(M).  % 再帰的なループ実装
+
+% ?- put_n_of_A(5).
+% AAAAA
+% true.
+
+% ?- put_n_of_A(0).
+% 
+% true.
+
+% ?- put_n_of_A(-1).
+% false.
+
+
+% Resultがnの階乗であるかを判定する述語(関数ではない！)
+% factorial(n, Result), Result =:= n!
+factorial(0, 1) :- !.   % 0! = 1
+factorial(N, Result) :- % n! = n * (n-1)!
+    N > 0,
+    M is N - 1,
+    factorial(M, NextResult),
+    Result is NextResult * N.
+
+% ?- factorial(5, Result).
+% Result = 120.
+
+% ?- factorial(0, Result).
+% Result = 1.
+
+% ?- factorial(-1, Result).
+% false.
+
