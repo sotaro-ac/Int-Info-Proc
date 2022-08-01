@@ -186,9 +186,96 @@ factorial(N, Result) :- % n! = n * (n-1)!
 % false.
 
 
-% ----
-% TODO: リストの解説
-% ----
+/* Prolog Lists */
+
+% Examples of Lists:  [a, b, c], [], [a, b, [c, d], e]
+
+% 
+% Representation of Lists:
+% 
+
+% ?- [Head, Next|Tail] = [a, b, c, d, e].
+% Head = a,
+% Next = b,
+% Tail = [c, d, e].
+
+% ?- [Head, Next|Tail] = [a, b, c].
+% Head = a,
+% Next = b,
+% Tail = [c].
+
+% ?- [Head, Next|Tail] = [a, b].
+% Head = a,
+% Next = b,
+% Tail = [].
+
+% ?- [Head, Next|Tail] = [a].
+% false.
+
+
+% 
+% Basic Operations on Lists
+% ---
+% For more detail: tutorialspoint | Prolog - Lists
+% - https://www.tutorialspoint.com/prolog/prolog_lists.htm
+
+% Is list has X?
+list_has(X, [X|_]) :- !.
+list_has(X, [_|Tail]) :- list_has(X, Tail).
+
+% ?- list_has(a, [a, b, c, d, e]).
+% true.
+
+% ?- list_has(x, [a, b, c, d, e]).
+% false.
+
+% ?- list_has(b, [a, [b, c], d]).
+% false.
+
+
+% Length of list.
+list_length([], 0) :- !.
+list_length([_|Tail], N) :-
+    list_length(Tail, N1),
+    N is N1 + 1.
+    % or "N1 is N - 1"
+
+% ?- list_length([], L).
+% L = 0.
+
+% ?- list_length([a, b, c, d, e], L).
+% L = 5.
+
+% ?- list_length([a, [b, c], e], L).
+% L = 3.
+
+
+% Append to list.
+list_append(A, List, [A|List]).
+
+% ?- list_append(a, [], L).
+% L = [a].
+
+% ?- list_append(a, [b, c, d], L).
+% L = [a, b, c, d].
+
+% ?- list_append([a], [b, c, d], L).
+% L = [[a], b, c, d].
+
+
+% Delete X from list.
+list_delete(X, [X], []) :- !.
+list_delete(X, [X|L1], L1) :- !.
+list_delete(X, [Y|L2], [Y|L1]) :- list_delete(X, L2, L1).
+
+% ?- list_delete(a, [a, b, c, d], L).
+% L = [b, c, d].
+
+% ?- list_delete(c, [a, b, c, d], L).
+% L = [a, b, d].
+
+% ?- list_delete(x, [a, b, c, d], L).
+% false.
 
 
 % [Tips]: カット "!" の意味
@@ -208,7 +295,7 @@ append([U|X],Y,[U|Z]) :- append(X,Y,Z).
 % X = [], Y = [1,2];
 % X = [1], Y = [2];
 % X = [1,2], Y = [];
-% false.                    % すべての解を出力する(非決定性)
+% false.                    % false が出るまですべての解を出力する(非決定性)
 
 % > appendの第一節の本体にカットを加えると、非決定性の性質が事実上消える。
 append_a([],L,L) :- !.
