@@ -128,3 +128,12 @@ calc :-
     F is 10 ** 2, write('10 ** 2 is '), write(F), nl,   % 100
     G is 25 mod 7, write('25 mod 7 is '), write(G), nl. % 4
 
+% ?- calc.
+% 1 + 2 is 3
+% 5 - 2 is 3
+% 3 * 4 is 12
+% 7 / 3 is 2.3333333333333335
+% 7 // 3 is 2
+% 10 ** 2 is 100
+% 25 mod 7 is 4
+% true.
