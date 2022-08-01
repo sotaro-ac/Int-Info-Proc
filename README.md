@@ -3,7 +3,7 @@
 LISPやPrologを使って基本的な知識情報処理(主にグラフ探索)を行いましょう！
 
 > 当ドキュメントは初歩的なプログラミングの知識がある方向けに作成しています．
-> 例えば，四則演算(`+,-,*,/,%[mod]`)や条件式の解釈および制御(`if (...) else ...`)，関数の定義(ex. `def func (args...) {...}`)，特にデータ構造(配列やリスト)による**有向グラフの表現**についての理解が必要です．
+> 例えば，四則演算(`+,-,*,/,%[mod]`)や条件式の解釈および制御(`if (...) else ...`)，関数の定義(ex. `def func (args...) {...}`)，特にデータ構造(配列やリスト)による**有向/無向グラフの表現**についての理解が必要です．
 
 ## 実行環境
 
@@ -43,6 +43,7 @@ LISPやPrologを使って基本的な知識情報処理(主にグラフ探索)�
 - 画面左のタブに `[Program]` か `[Notebook]` を追加して，そこにPrologのプログラムを記述します．
 - 右下のテキストボックス(左枠に"?-"と書かれている入力欄)に質問(評価したい式)を入力します．
 - 参考になりそうなサイト：
+  - [Prolog - Quick Guide](https://www.tutorialspoint.com/prolog/prolog_quick_guide.htm)
   - [Qiita | Prolog入門](https://qiita.com/a163236/items/c99cd16ddf77e2228719#%E3%81%8A%E3%82%8F%E3%82%8A%E3%81%AB)
   - [SWI-Prolog | Manual](https://www.swi-prolog.org/pldoc/doc_for?object=manual)
   - [library(lists): List Manipulation](https://www.swi-prolog.org/pldoc/man?section=lists)
@@ -69,7 +70,12 @@ LISPやPrologを使って基本的な知識情報処理(主にグラフ探索)�
 - **Hello Prolog!**：[`prolog/hello_world.pl`](prolog/hello_world.pl)
   - 最初にやる定番．`"Hello World!"` を出力します．
 
-- Coming Soon...
+- **Prolog Basics**：[`prolog/prolog_basics.el`](prolog/prolog_basics.pl)
+  - Prologの基本的なプログラムを書いてみよう．
+    - 確定節：プログラムによる事実(Fact)の宣言, 規則(Rule)の定義
+    - ゴール節：質問(Question/Query)による事実/規則の証明
+    - データ型, 演算子(比較, 算術)
+    - Prologのより詳しい入門：[Prolog - Quick Guide](https://www.tutorialspoint.com/prolog/prolog_quick_guide.htm)
 
 ## ライセンス表記 (Lisence)
 
