@@ -36,12 +36,16 @@ LISPやPrologを使って基本的な知識情報処理(主にグラフ探索)�
 
 ### SWI-Prologの場合：
 - ここではWebブラウザで「SWISH」を利用する方法を説明します．
-  > コマンドラインシェルからSWI-Prologを利用する場合，`<file_name>.pl` というファイルにPrologのプログラムを記述し，`prolog` のCLIを起動してから `consult(<file_name>).` または `[<file_name>].` と入力することでファイル内の式を読み込むことができます（`true`が表示されたら成功です！）．
-  > `[<file_name>].`で読み込める拡張子としては`.pl`の他に`.prolog`があります．他の拡張子を持つ場合は `['<file_name>.pro']` のように拡張子まで含めたファイル名を`' '`で囲いましょう．
-  > ちなみに `prolog` を終了するには `halt.` と入力してください．
 - 直感的な画面設計なので，特に解説は必要ないかもしれません．
 - 画面左のタブに `[Program]` か `[Notebook]` を追加して，そこにPrologのプログラムを記述します．
 - 右下のテキストボックス(左枠に"?-"と書かれている入力欄)に質問(評価したい式)を入力します．
+- コマンドラインシェルからSWI-Prologを利用する場合：
+  - `<file_name>.pl` というファイルにPrologのプログラムを記述し，`prolog` のCLIを起動してから `consult(<file_name>).` または `[<file_name>].` と入力することでファイル内の式を読み込むことができます（`true`が表示されたら成功です！）．
+  - Ex.) `?- [filename]  % filename.pl の場合`
+  - `[<file_name>].`で読み込める拡張子としては`.pl`の他に`.prolog`があります
+  - 他の拡張子を持つ場合は `['<file_name>.txt']` のように拡張子まで含めたファイル名を`' '`で囲いましょう
+  - `prolog` を終了するには `halt.` と入力してください
+  - クエリ(質問)を強制終了するには`Ctrl+C`の後に`a`を入力することでabortできます
 - 参考になりそうなサイト：
   - [Prolog - Quick Guide](https://www.tutorialspoint.com/prolog/prolog_quick_guide.htm)
   - [Qiita | Prolog入門](https://qiita.com/a163236/items/c99cd16ddf77e2228719#%E3%81%8A%E3%82%8F%E3%82%8A%E3%81%AB)
@@ -86,8 +90,6 @@ LISPやPrologを使って基本的な知識情報処理(主にグラフ探索)�
     - 山登り法：Hill Climbing
     - 強制山登り法：Enforced Hill Climbing
 -->
-
-- 問題分解法（AND/ORグラフ，ハノイの塔）
 
 ### SWI-Prolog
 
